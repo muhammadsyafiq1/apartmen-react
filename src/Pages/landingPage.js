@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from 'Parts/Header';
 import Hero from 'Parts/Hero';
-import landingPage from 'json/landingPage.json';
+import landingPage from 'schema_db/landingPage.json';
 
 export default class LandingPage extends Component {
     render() {
