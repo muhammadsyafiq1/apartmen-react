@@ -94,7 +94,7 @@ export default function Hero(props) {
                             />
                         </div>
                     </div>
-            </div>
-        </section>
-    )
-}
+                </div>
+            </section>
+        )
+    }
