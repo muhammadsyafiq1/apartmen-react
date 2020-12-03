@@ -1,9 +1,11 @@
 import React from 'react'
 import IconText from './IconText'
 import Button from 'components/Button'
+import Fade from 'react-reveal/Fade';
 
 export default function Footer() {
     return (
+        <Fade bottom>
         <footer>
             <div className="container">
                 <div className="row">
@@ -80,5 +82,6 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
+        </Fade>
     )
 }

@@ -3,6 +3,7 @@ import BrandIcon from './IconText'
 import Button from 'components/Button'
 import Navbar from 'react-bootstrap/Navbar'
 import { Nav } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 
 export default function Header(props) {
 
@@ -11,6 +12,7 @@ export default function Header(props) {
     };
 
     return (
+      <Fade>
       <div className="header">
         <div className="container">
           <Navbar expand="lg">
@@ -45,6 +47,7 @@ export default function Header(props) {
           </Navbar>
       </div>
     </div>
+    </Fade>
     )
 }
 
