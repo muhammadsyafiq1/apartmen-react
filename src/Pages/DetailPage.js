@@ -4,6 +4,11 @@ import ItemDetails from 'schema_db/itemDetails.json';
 import Header from 'Parts/Header';
 import FeaturedImage from 'Parts/FeaturedImage';
 import PageDetailDescription from 'Parts/PageDetailDescription';
+import BookingForm from 'Parts/BookingForm';
+import Categories from 'Parts/Categories';
+import Testimony from 'Parts/Testimony';
+import Footer from 'Parts/Footer';
+import Activity from 'Parts/Activity';
 
 export default class DetailPage extends Component {
     componentDidMount(){
@@ -31,10 +36,14 @@ export default class DetailPage extends Component {
                             <PageDetailDescription data={ItemDetails}></PageDetailDescription>
                         </div>
                         <div className="col-5">
-                            Booking Form
+                            <BookingForm itemDetails={ItemDetails}></BookingForm>
                         </div>
                     </div>
                 </section>
+                <Categories data={ItemDetails.categories}></Categories>
+                {/* <Activity data={ItemDetails.activities}></Activity> */}
+                <Testimony data={ItemDetails.testimonial}></Testimony>
+                <Footer></Footer>
             </>
         )
     }

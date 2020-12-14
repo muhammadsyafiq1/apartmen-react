@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import Header from 'Parts/Header';
-import Hero from 'Parts/Hero';
-import landingPage from 'schema_db/landingPage.json';
-import MostPicked from 'Parts/MostPicked';
-import Categories from 'Parts/Categories';
-import Testimony from 'Parts/Testimony';
-import Footer from 'Parts/Footer';
+import React, { Component } from 'react'
+import Header from 'Parts/Header'
+import Hero from 'Parts/Hero'
+import landingPage from 'schema_db/landingPage.json'
+import MostPicked from 'Parts/MostPicked'
+import Categories from 'Parts/Categories'
+import Testimony from 'Parts/Testimony'
+import Footer from 'Parts/Footer'
 
 export default class LandingPage extends Component {
     constructor(props){

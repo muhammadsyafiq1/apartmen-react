@@ -10,18 +10,18 @@ import formatDate from 'utils/formatDate'
 import iconCalendar from 'Assets/images/icon/icon-calendar.svg'
 
 export default function Date(props) {
-    const { value, placeholder, name } = props;
-    const [isShowed, setIsShowed] = useState(false);
-  
-    const datePickerChange = (value) => {
-      const target = {
-        target: {
-          value: value.selection,
-          name: name,
-        },
-      };
-      props.onChange(target);
+  const { value, placeholder, name } = props;
+  const [isShowed, setIsShowed] = useState(false);
+
+  const datePickerChange = (value) => {
+    const target = {
+      target: {
+        value: value.selection,
+        name: name,
+      },
     };
+    props.onChange(target);
+  };
   
     useEffect(() => {
       document.addEventListener("mousedown", handleClickOutside);
